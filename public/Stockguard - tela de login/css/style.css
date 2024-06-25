@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+.login-container {
+    max-width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.login-container img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.login-container .form-control {
+    margin-bottom: 15px;
+}
+.login-container .btn-primary,
+.login-container .btn-secondary {
+    width: 100%;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="detalhesstyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body background="./assets/images/fundo-cinza-claro12.webp">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <h1 class="text-center">Detalhes do Produto</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-text" id="productCode">Código do Produto</h4>
+                        <h5 class="card-text" id="productName">Nome do Produto</h5>
+                        <h5 class="card-text" id="productDescription">Descrição do Produto</h5>
+                        <h5 class="card-text" id="productPrice">Preço: R$XX,XX</h5>
+                        <h5 class="card-text" id="productQuantity">Quantidade em Estoque: XX unidades</h5>
+                        <h5 class="card-text" id="productEntryDate">Data de Entrada: </h5>
+                        <h5 class="card-text" id="productExpirationDate">Data de Vencimento: </h5>
+                        <div class="chart-container">
+                            <canvas id="productExpirationChart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="productExpirationPieChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="./RelatoriodeProdutos.html" class="btn btn-primary">Voltar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/detalhesscripts.js"></script>
+</body>
+
+</html>

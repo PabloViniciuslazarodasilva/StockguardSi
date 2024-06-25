@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Produto</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/editarstyles.css">
+</head>
+
+<body background="./assets/images/fundo-cinza-claro12.webp">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <h1 class="text-center">Editar Produto</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <div id="alertContainer"></div> 
+                        <form id="productForm">
+                            <div class="form-group">
+                                <label for="productName">Nome do Produto</label>
+                                <input type="text" class="form-control" id="productName" placeholder="Nome do Produto">
+                            </div>
+                            <div class="form-group">
+                                <label for="productDescription">Descrição do Produto</label>
+                                <textarea class="form-control" id="productDescription" rows="3" placeholder="Descrição do Produto"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="productPrice">Preço</label>
+                                <input type="text" class="form-control" id="productPrice" placeholder="R$ 0,00" inputmode="numeric">
+                            </div>
+                            <div class="form-group">
+                                <label for="productQuantity">Quantidade em Estoque</label>
+                                <input type="text" class="form-control" id="productQuantity" placeholder="0" inputmode="numeric">
+                            </div>
+                            <div class="form-group">
+                                <label for="productEntryDate">Data de Entrada</label>
+                                <input type="date" class="form-control" id="productEntryDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="productExpirationDate">Data de Vencimento</label>
+                                <input type="date" class="form-control" id="productExpirationDate">
+                            </div>
+                            <button type="button" class="btn btn-primary" id="btnSalvarProduto">Salvar</button>
+                            <a href="./RelatoriodeProdutos.html" class="btn btn-danger">Cancelar</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="confirmModalDate" tabindex="-1" role="dialog" aria-labelledby="confirmModalDateLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalDateLabel">Confirmar Data de Vencimento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    A data de vencimento está em menos de 7 dias. Deseja realmente salvar o produto?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                    <button type="button" class="btn btn-danger" id="confirmDate">Sim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./scripts/editarscripts.js"></script>
+</body>
+
+</html>
