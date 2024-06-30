@@ -1,0 +1,36 @@
+{
+  "usuarios": [
+      {
+          "email": "usuario1@example.com",
+          "senha": "senha123"
+      },
+      {
+          "email": "usuario2@example.com",
+          "senha": "senha456"
+      },
+      {
+          "email": "usuario3@example.com",
+          "senha": "senha789"
+      }
+  ],
+  "produtos": [
+      {
+          "codigo": "01",
+          "nome": "Produto A",
+          "descricao": "Descrição do Produto A",
+          "preco": "10.00",
+          "quantidade": 5,
+          "dataEntrada": "2024-01-01",
+          "dataVencimento": "2024-12-31"
+      },
+      {
+          "codigo": "02",
+          "nome": "Produto B",
+          "descricao": "Descrição do Produto B",
+          "preco": "20.00",
+          "quantidade": 10,
+          "dataEntrada": "2024-02-01",
+          "dataVencimento": "2025-01-31"
+      }
+  ]
+}
